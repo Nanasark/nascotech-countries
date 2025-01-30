@@ -5,6 +5,7 @@ import {
   Globe,
   LanguagesIcon as Language,
   Square,
+  GlobeLock,
 } from "lucide-react";
 import type React from "react";
 
@@ -32,7 +33,7 @@ export default function DetailsCard({
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <InfoItem icon={<MapPin />} label="Capital" value={capital || "N/A"} />
-        <InfoItem icon={<Users />} label="Region" value={region} />
+        <InfoItem icon={<GlobeLock />} label="Region" value={region} />
         <InfoItem
           icon={<Globe />}
           label="Subregion"
