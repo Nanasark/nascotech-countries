@@ -45,18 +45,6 @@ npm run dev
 
 The app will be available at http://localhost:5173/.
 
-## File Structure 📂
-
-📦 nascotech-countries
-┣ 📂 src
-┃ ┣ 📂 components
-┃ ┃ ┣ 📜 CountryCard.tsx
-┃ ┣ 📜 App.tsx
-┃ ┣ 📜 main.tsx
-┣ 📜 package.json
-┣ 📜 README.md
-
-
 API Usage 🌐 
 
 The app fetches country data from:
