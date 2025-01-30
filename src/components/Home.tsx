@@ -10,7 +10,7 @@ function Home() {
   const { countries, loading } = useCountryContext();
 
   return (
-    <main className="pl-[10px] pr-[10px] pt-10 pb-10 flex flex-col gap-5 bg-blue-500 items-center text-black w-full min-h-[700px]">
+    <main className="pl-[10px] pr-[10px] pt-10 pb-10 flex flex-col gap-5 bg-emerald-200 items-center text-black w-full min-h-[700px]">
       <div>
         <SearchBar />
       </div>
