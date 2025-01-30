@@ -78,4 +78,4 @@ License 📜MIT
 
 This project is licensed under the MIT License.
 
-Made with ❤️ by Your Daniel
+Made with ❤️ by  Daniel
