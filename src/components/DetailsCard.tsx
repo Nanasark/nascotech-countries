@@ -55,7 +55,7 @@ export default function DetailsCard({
           value={`${area?.toLocaleString() || "N/A"} km²`}
         />
       </div>
-      ={" "}
+    
       {/* <div className="mt-6">
         <iframe
           src={`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik`}

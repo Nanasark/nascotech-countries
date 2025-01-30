@@ -1,5 +1,5 @@
-Country Search App 🌍
-
+Country Info App 🌍
+https://nascotech-countries.vercel.app
 ## Overview
 
 The Country web App is a simple web application that allows users to search for countries and view essential details like name, flag, region, and population. The app fetches data from the REST Countries API and dynamically displays relevant information based on user input.
@@ -74,7 +74,7 @@ Push to your branch (git push origin feature-name).
 
 Open a Pull Request.
 
-License 📜
+License 📜MIT
 
 This project is licensed under the MIT License.
 
