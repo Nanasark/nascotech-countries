@@ -16,10 +16,15 @@ function Home() {
       </div>
 
       {loading ? (
-        <div className="flex flex-col items-center">
+        <>
           <Loader className="animate-spin h-10 w-10 text-blue-500 mb-4" />
           <p className="text-gray-600">Loading countries...</p>
-        </div>
+          <div className="flex flex-col md:grid lg:grid-cols-3 md:grid-cols-2 gap-3 w-full">
+            {[...Array(12)].map((_, index) => (
+              <CountryCardSkeleton key={index} />
+            ))}
+          </div>
+        </>
       ) : (
         <section className="flex flex-col md:grid lg:grid-cols-3 md:grid-cols-2 gap-3 w-full">
           {countries.length > 0
