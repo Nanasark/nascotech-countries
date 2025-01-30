@@ -56,16 +56,7 @@ export default function DetailsCard({
         />
       </div>
     
-      {/* <div className="mt-6">
-        <iframe
-          src={`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik`}
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          loading="lazy"
-          title={`Map of ${name.official}`}
-        ></iframe>
-      </div> */}
+   
     </section>
   );
 }

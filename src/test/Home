@@ -1,0 +1,72 @@
+// // __tests__/CountryCard.test.tsx
+// import { render, screen } from "@testing-library/react";
+// import CountryCard from "../components/CountryCard";
+
+// describe("CountryCard Component", () => {
+//   test("renders correctly with given props", () => {
+//     render(
+//       <CountryCard
+//         name="Ghana"
+//         flag="https://flagcdn.com/w320/gh.png"
+//         region="Africa"
+//         population={31072940}
+//       />
+//     );
+//     expect(screen.getByText("Ghana")).toBeInTheDocument();
+//     expect(screen.getByText("Africa")).toBeInTheDocument();
+//     expect(screen.getByText("Population: 31,072,940")).toBeInTheDocument();
+//   });
+// });
+
+// // __tests__/Home.test.tsx
+// import { render, screen } from "@testing-library/react";
+// import { MemoryRouter } from "react-router-dom";
+// import { CountryProvider } from "../context/CountryContext";
+// import Home from "../components/Home";
+
+// describe("Home Component", () => {
+//   test("renders loading state initially", () => {
+//     render(
+//       <CountryProvider>
+//         <MemoryRouter>
+//           <Home />
+//         </MemoryRouter>
+//       </CountryProvider>
+//     );
+//     expect(screen.getByText("Loading countries...")).toBeInTheDocument();
+//   });
+// });
+
+// // __tests__/SearchBar.test.tsx
+// import { render, screen, fireEvent } from "@testing-library/react";
+// import { CountryProvider } from "../context/CountryContext";
+// import SearchBar from "../components/SearchBar";
+
+// describe("SearchBar Component", () => {
+//   test("updates search input value", () => {
+//     render(
+//       <CountryProvider>
+//         <SearchBar />
+//       </CountryProvider>
+//     );
+//     const input = screen.getByPlaceholderText("Search for a country...");
+//     fireEvent.change(input, { target: { value: "Ghana" } });
+//     expect((input as HTMLInputElement).value).toBe("Ghana");
+//   });
+// });
+
+// // __tests__/CountryContext.test.tsx
+// import { renderHook, act } from "@testing-library/react";
+// import { CountryProvider, useCountryContext } from "../context/CountryContext";
+
+// describe("CountryContext", () => {
+//   test("updates search term correctly", () => {
+//     const { result } = renderHook(() => useCountryContext(), {
+//       wrapper: CountryProvider,
+//     });
+//     act(() => {
+//       result.current.updateSearchTerm("Ghana");
+//     });
+//     expect(result.current.searchTerm).toBe("Ghana");
+//   });
+// });

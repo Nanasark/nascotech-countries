@@ -11,6 +11,7 @@ function Home() {
 
   return (
     <main className="pl-[10px] pr-[10px] pt-10 pb-10 flex flex-col gap-5 bg-gray-100 items-center text-black w-full min-h-[700px]">
+      <h1 className="font-bol text-4xl text-cyan-900">Countries</h1>
       <div>
         <SearchBar />
       </div>
