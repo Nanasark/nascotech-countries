@@ -6,7 +6,7 @@ import {
   LanguagesIcon as Language,
   Square,
 } from "lucide-react";
-import type React from "react"; // Added import for React
+import type React from "react";
 
 export default function DetailsCard({
   name,
@@ -16,6 +16,7 @@ export default function DetailsCard({
   languages,
   area,
   capital,
+  region,
 }: Country) {
   return (
     <section className="text-gray-800 flex flex-col p-5 rounded-lg w-full bg-white shadow-lg min-h-screen">
@@ -29,9 +30,9 @@ export default function DetailsCard({
           <h1 className="text-3xl font-bold">{name.official}</h1>
         </div>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <InfoItem icon={<MapPin />} label="Capital" value={capital || "N/A"} />
+        <InfoItem icon={<Users />} label="Region" value={region} />
         <InfoItem
           icon={<Globe />}
           label="Subregion"
@@ -53,8 +54,7 @@ export default function DetailsCard({
           value={`${area?.toLocaleString() || "N/A"} km²`}
         />
       </div>
-
-      {/* Uncomment and adjust the OpenStreetMap embed when ready to use */}
+      ={" "}
       {/* <div className="mt-6">
         <iframe
           src={`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik`}
